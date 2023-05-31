@@ -63,9 +63,9 @@ header {
 .header-link:not :last-child {
   margin-right: 40px;
 }
-.links {
+/* .links {
   padding: 24px 0;
-}
+} */
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -75,10 +75,29 @@ header {
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>hero>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .hero {
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(/images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 188px 0;
+  max-width: 1440px;
+  height: 600px;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>future>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.specifics-icon {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-cloud);
+  margin-bottom: 24px;
+  width: 264px;
+  height: 112px;
+  align-items: center;
+  border-radius: 4px;
+}
 .future-list {
   display: flex;
   gap: 24px;
@@ -115,6 +134,33 @@ header {
   width: calc((100% - 48px) / 3);
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>team>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.social-liste {
+  display: block;
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  padding-top: 8px;
+  padding-left: 0px;
+}
+.social-icon {
+  fill: currentColor;
+}
+.social-links:hover {
+  background-color: var(--color-ocean);
+  color: var(--color-cloud);
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: var(--color-cloud);
+  background-color: var(--color-iris);
+}
 .team-card-name {
   text-align: center;
 }
@@ -137,6 +183,46 @@ header {
 }
 .team-card {
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Cutromers>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-liste {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-block {
+  width: calc((100% - 168px) / 6);
+  height: 88px;
+}
+.customers-links {
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-group:hover,
+.icon-group:focus {
+  border-color: var(--color-ocean);
+  color: var(--color-ocean);
+}
+.customers-links:hover,
+.customers-links:focus {
+  border-color: var(--color-ocean);
+  color: var(--color-ocean);
+}
+.icon-group {
+  fill: currentColor;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer>>>>>>>>>>>>>>>>>>>>>> */
 .footer-style {
@@ -148,6 +234,49 @@ header {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
+}
+.footer-container {
+  margin-right: 120px;
+}
+/* foooter social */
+.footer-style {
+  display: flex;
+  align-items: baseline;
+}
+.footer-index {
+  display: flex;
+  align-items: baseline;
+}
+.text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.social-liste-f {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 16px;
+  margin-right: 120px;
+}
+.social {
+  margin-right: 120px;
+}
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.social-links-f:hover {
+  background-color: var(--color-green);
+}
+.social-links-f:focus {
+  background-color: var(--color-green);
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>portfolio buttons>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .button-filter {
@@ -170,6 +299,7 @@ header {
 .gallery-foto {
   flex-basis: calc((100% - 48px) / 3);
 }
+
 .gallery-text {
   border: 1px solid var(--color-cornflower);
   border-top: none;
@@ -178,6 +308,15 @@ header {
 .name-picture {
   margin-bottom: 8px;
 }
+.link-foto {
+  display: block;
+}
+.link-foto:hover {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 /* body */
 body {
   font-family: 'Roboto', sans-serif;
@@ -228,6 +367,9 @@ body {
   background-color: var(--color-ocean);
   color: var(--color-white);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 /* card team background */
 .team-style {
