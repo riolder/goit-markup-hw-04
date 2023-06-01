@@ -36,6 +36,8 @@ button {
 /* placing */
 .head {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 header {
   padding-top: 0px;
@@ -75,7 +77,7 @@ header {
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>hero>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .hero {
-  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(/images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -211,6 +213,10 @@ header {
   align-items: center;
   justify-content: center;
 }
+.icon-group {
+  color: var(--color-light-slate);
+  fill: currentColor;
+}
 .icon-group:hover,
 .icon-group:focus {
   border-color: var(--color-ocean);
@@ -221,9 +227,7 @@ header {
   border-color: var(--color-ocean);
   color: var(--color-ocean);
 }
-.icon-group {
-  fill: currentColor;
-}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer>>>>>>>>>>>>>>>>>>>>>> */
 .footer-style {
   padding: 100px 0;
@@ -270,6 +274,7 @@ header {
 .text {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .social-links-f:hover {
