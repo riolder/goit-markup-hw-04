@@ -279,6 +279,7 @@ header {
 .social-icons {
   width: 24px;
   height: 24px;
+  fill: var(--color-cloud);
 }
 .text {
   display: flex;
